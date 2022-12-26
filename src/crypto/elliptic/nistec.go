@@ -27,11 +27,11 @@ func initP224() {
 	}
 }
 
-type p256Curve struct {
+type P256Curve struct {
 	nistCurve[*nistec.P256Point]
 }
 
-var p256 = &p256Curve{nistCurve[*nistec.P256Point]{
+var p256 = &P256Curve{nistCurve[*nistec.P256Point]{
 	newPoint: nistec.NewP256Point,
 }}
 
